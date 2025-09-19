@@ -1,5 +1,7 @@
 name: K6 load test
 on: [push]
+permissions: 
+  contents: write
 
 jobs:
     build:
@@ -28,4 +30,5 @@ jobs:
                 github_token: ${{ secrets.GITHUB_TOKEN }}
                 publish_branch: gh-pages
                 publish_dir: report
+
 
