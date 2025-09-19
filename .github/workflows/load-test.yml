@@ -21,5 +21,11 @@ jobs:
               with:
                 name: relatório de testes de performance
                 path: report
-
+            
+            - name: step 4 - publish report
+              uses: peaceiris/actions-gh-pages@v4
+              with:
+                github_token: ${{ secrets.GITHUB_TOKEN }}
+                publish_branch: gh-pages
+                publish_dir: report
 
