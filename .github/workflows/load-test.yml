@@ -14,7 +14,7 @@ jobs:
               with:
                 path: ./aws/testAwsCloud.js
             
-            - run: ls $ mkdir report & mv index.html report
+            - run: ls & mkdir report & mv index.html report
                 
             - name: step 3 - upload artifact
               uses: actions/upload-artifact@v4
