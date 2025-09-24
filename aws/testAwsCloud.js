@@ -18,3 +18,9 @@ export default function() {
         'status code 200': (r) => r.status === 200 
     })
 }
+
+export function handleSummary(data) {
+    return {
+        "index.html": htmlReport(data)
+    }
+}
